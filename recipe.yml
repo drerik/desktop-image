@@ -62,6 +62,7 @@ stages:
       - modules/50-laptop-goodies.yml
       - modules/60-media.yml
       - modules/80-printers.yml
+      - modules/85-wireguard.yml
       - modules/90-3d-utils.yml
       - modules/100-accessibility.yml
       - modules/110-fonts.yml

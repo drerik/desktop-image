@@ -1,0 +1,6 @@
+name: wireguard
+type: apt
+source:
+  packages:
+  # General
+  - wireguard
