@@ -75,6 +75,7 @@ stages:
       - modules/170-gnome-software-vso-plugin.yml
       - modules/200-gnome-common.yml
       - modules/210-libs-extra.yml
+      - modules/997-ensure-exec-hooks.yml
       - modules/998-vanilla-cleanup.yml
       - modules/999-pkg-cleanup.yml
       - modules/999-clear-first-setup-steps-unit.yml
@@ -94,7 +95,7 @@ stages:
   - name: gnome-software-setup
     type: shell
     commands:
-    - rm /usr/lib/*/gnome-software/plugins-20/libgs_plugin_packagekit.so
+    - rm -f /usr/lib/*/gnome-software/plugins-20/libgs_plugin_packagekit.so
 
   - name: cleanup
     type: shell
